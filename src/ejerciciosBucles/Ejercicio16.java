@@ -54,7 +54,6 @@ public class Ejercicio16 {
                 numAleatorio = (int) (Math.random()*9+1);
                 for (Integer i:numerosRepetidos) {
                     if (numAleatorio==i) numeroValido=false;
-                    System.out.println(i + " "+ numAleatorio);
                 }
             } while (numeroValido == false);
 
@@ -64,7 +63,7 @@ public class Ejercicio16 {
 
             if (respuesta.equalsIgnoreCase(preguntas[numAleatorio][1])) {
                 aciertosSeguidos++;
-                System.out.println("Has acertado! Llevas "+ aciertosSeguidos + " aciertos.");
+                System.out.println("Has acertado! Llevas "+ aciertosSeguidos + " aciertos. En " + intentos + " intentos");
             } else {
                 aciertosSeguidos=0;
                 numerosRepetidos.clear();
