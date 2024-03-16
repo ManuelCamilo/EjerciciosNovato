@@ -7,7 +7,7 @@ public class Ejercicio22 {
 
     public Ejercicio22(int numCaras, int numDados) {
         this.numCaras = numCaras;
-        this.tiradas = new int[numDados];
+        tiradas = new int[numDados];
 
     }
 
